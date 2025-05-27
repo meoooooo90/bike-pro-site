@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BikePro Landing Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+      filter: grayscale();
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease-in;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .highlight {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-top: 1rem;
+      animation: slideUp 1s ease-out forwards;
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    .highlight img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .features {
+      position: relative;
+      top: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+    }
+    .feature {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .feature img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .feature:hover {
+      transform: scale(1.05);
+    }
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .cta button {
+         position: relative;
+      top: 3em;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta button:hover {
+      background: #388e3c;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0e0e0;
+      margin-top: 7rem;
+    }
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BikePro🚲</h1>
+    <p>Ride Smarter. Ride Stronger.</p>
+  </header>
+
+  <section>
+    <div class="highlight">
+      <h2>Why BikePro?🏁</h2>
+      <p>BikePro is your ultimate companion for smart, eco-friendly travel. With durable builds and intelligent tech integration, it’s cycling reinvented.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Smart Tracking⌚</h3>
+        <p>Track distance, speed, and route with GPS and mobile sync.</p>
+      </div>
+      <div class="feature">
+        <h3>Eco Friendly🌿</h3>
+        <p>Zero emissions transport built for the conscious commuter.</p>
+      </div>
+      <div class="feature">
+        <h3>Custom Designs🏜️</h3>
+        <p>Choose colors, styles, and accessories to match your vibe.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <button>Get Yours Now🛒</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BikePro🚲 Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
